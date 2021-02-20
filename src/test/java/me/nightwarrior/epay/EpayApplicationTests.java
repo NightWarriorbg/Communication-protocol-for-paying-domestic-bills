@@ -1,10 +1,10 @@
-package me.nightwarrior.billapp;
+package me.nightwarrior.epay;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CommunicationProtocolForPayingDomesticBillsApplicationTests {
+class EpayApplicationTests {
 
     @Test
     void contextLoads() {

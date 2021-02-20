@@ -8,13 +8,13 @@
         <version>2.4.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>me.nightwarrior</groupId>
-    <artifactId>billapp</artifactId>
-    <version>1.0.0</version>
-    <name>Communication protocol for paying domestic bills</name>
-    <description>Communication protocol for paying domestic bills</description>
+    <groupId>me.nightwarrior.epay</groupId>
+    <artifactId>epay</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>epay</name>
+    <description>Epay</description>
     <properties>
-        <java.version>15</java.version>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -33,8 +33,8 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -49,6 +49,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
